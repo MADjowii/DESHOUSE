@@ -197,6 +197,7 @@ nav.scrolled {
   letter-spacing: 6px;
   text-transform: uppercase;
   color: var(--cm);
+  margin-top: 16px;
   margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp .8s ease 2.2s forwards;
