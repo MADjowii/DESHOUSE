@@ -8,31 +8,26 @@ const TEAM = [
   {
     name: "Helen Charles",
     role: "Chief Executive Officer",
-    photo:
     alt: "CEO of DES HOUSE"
   },
   {
     "name": "Mohamed Abubakar",
     "role": "Chief Operating Officer",
-    "photo":
     "alt": "COO of DES HOUSE"
   },
   {
     "name": "Kaaya Allotey",
     "role": "Chief Strategy Officer",
-    "photo":
     "alt": "Chief Strategy Officer at DES HOUSE"
   },
   {
     "name": "Joseph Madaki",
     "role": "Director of Sales & Biz Dev",
-    "photo":
     "alt": "Director of Sales at DES HOUSE"
   },
   {
     "name": "Nathália Rodrigues",
     "role": "Pre-Production & Admin",
-    "photo":
     "alt": "Admin and Pre-Production at DES HOUSE"
   }
 ];
