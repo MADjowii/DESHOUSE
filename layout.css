@@ -138,13 +138,17 @@ nav.scrolled {
 /* --- Hero --- */
 
 .hero-logo {
+.hero-logo {
   max-width: 520px;
+  max-height: 260px;
   width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
   opacity: 0;
   animation: fadeUp 1s ease 2.4s forwards;
+  object-fit: contain;
+}
 }
 .hero {
   position: relative;
