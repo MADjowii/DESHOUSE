@@ -1,15 +1,47 @@
 /* ============================================
-   team.js — Render team cards from JSON
+   team.js — Team Grid
+   To add/edit team members: update the TEAM
+   array below directly.
    ============================================ */
 
-export async function initTeam() {
+const TEAM = [
+  {
+    name: "Placeholder Name",
+    role: "Chief Executive Officer",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
+    alt: "CEO of DES HOUSE"
+  },
+  {
+    name: "Placeholder Name",
+    role: "Chief Operating Officer",
+    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
+    alt: "COO of DES HOUSE"
+  },
+  {
+    name: "Placeholder Name",
+    role: "Chief Strategy Officer",
+    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80",
+    alt: "Chief Strategy Officer at DES HOUSE"
+  },
+  {
+    name: "Placeholder Name",
+    role: "Director of Sales",
+    photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80",
+    alt: "Director of Sales at DES HOUSE"
+  },
+  {
+    name: "Placeholder Name",
+    role: "Admin & Pre-Production",
+    photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80",
+    alt: "Admin and Pre-Production at DES HOUSE"
+  }
+];
+
+export function initTeam() {
   const grid = document.getElementById('teamGrid');
   if (!grid) return;
 
-  const res = await fetch('./team.json');
-  const team = await res.json();
-
-  grid.innerHTML = team.map((member, i) => `
+  grid.innerHTML = TEAM.map((member, i) => `
     <article class="team-card reveal reveal-delay-${i + 1}">
       <img
         class="team-photo"
