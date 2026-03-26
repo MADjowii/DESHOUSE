@@ -136,6 +136,16 @@ nav.scrolled {
 .mobile-menu a:hover { color: var(--wh); }
 
 /* --- Hero --- */
+
+.hero-logo {
+  max-width: 520px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  opacity: 0;
+  animation: fadeUp 1s ease 2.4s forwards;
+}
 .hero {
   position: relative;
   height: 100vh;
