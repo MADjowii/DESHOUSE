@@ -12,7 +12,7 @@ const TEAM = [
     alt: "CEO of DES HOUSE"
   },
   {
-    name: "Placeholder Name",
+    name: "Kaaya Allotey",
     role: "Chief Operating Officer",
     photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
     alt: "COO of DES HOUSE"
