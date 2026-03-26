@@ -1,6 +1,5 @@
 /* ============================================
    main.js — Entry Point
-   Imports and initializes all modules
    ============================================ */
 
 import { initNav } from './nav.js';
@@ -23,7 +22,7 @@ document.addEventListener('mousemove', (e) => {
   glow.style.top = `${e.clientY}px`;
 });
 
-/* --- Smooth Scroll for anchor links --- */
+/* --- Smooth Scroll --- */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -39,14 +38,12 @@ function playReel() {
   document.getElementById('reelPlaceholder').style.display = 'none';
   document.getElementById('reelEmbed').style.display = 'block';
 }
-window.playReel = playReel; // expose for inline onclick
-
-/* --- Close modal button (exposed globally for inline onclick) --- */
+window.playReel = playReel;
 window.closeModal = closeModal;
 
-/* --- Init all modules --- */
+/* --- Init --- */
 initNav();
-initModal();   // fetches projects.json, renders work grid
-initTeam();    // fetches team.json, renders team grid
+initModal();
+initTeam();
 initScrollReveal();
 initForm();

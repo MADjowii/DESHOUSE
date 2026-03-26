@@ -5,17 +5,15 @@
 let projects = [];
 
 export async function initModal() {
-  const res = await fetch('./data/projects.json');
+  const res = await fetch('./projects.json');
   projects = await res.json();
 
   renderWorkGrid();
 
-  // Close on backdrop click
   document.getElementById('modalBg').addEventListener('click', (e) => {
     if (e.target === document.getElementById('modalBg')) closeModal();
   });
 
-  // Close on Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
   });
@@ -49,7 +47,6 @@ function renderWorkGrid() {
     </article>
   `).join('');
 
-  // Click and keyboard open
   grid.querySelectorAll('.work-item').forEach(item => {
     item.addEventListener('click', () => openModal(+item.dataset.index));
     item.addEventListener('keydown', (e) => {
@@ -94,7 +91,6 @@ export function openModal(i) {
   document.body.style.overflow = 'hidden';
   modal.scrollTop = 0;
 
-  // Focus the close button for accessibility
   document.querySelector('.modal-x').focus();
 }
 

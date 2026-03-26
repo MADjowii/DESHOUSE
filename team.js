@@ -6,7 +6,7 @@ export async function initTeam() {
   const grid = document.getElementById('teamGrid');
   if (!grid) return;
 
-  const res = await fetch('./data/team.json');
+  const res = await fetch('./team.json');
   const team = await res.json();
 
   grid.innerHTML = team.map((member, i) => `
