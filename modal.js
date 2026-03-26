@@ -52,7 +52,7 @@ const PROJECTS = [
     year: "2025",
     services: "Brand Identity, Creative Direction",
     industry: "Fashion / Lifestyle",
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80",
+    img: "https://unsplash.com/photos/black-camera-on-top-of-brown-desk-9SyOKYrq-rE",
     brief: "Placeholder brief — describe the brand's vision and identity challenge.",
     approach: "Placeholder approach — walk through the visual identity process.",
     gallery: [
