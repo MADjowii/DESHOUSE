@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DES HOUSE — Entertainment & Sports Marketing Agency</title>
+  <meta name="description" content="DES HOUSE is a creative agency at the intersection of entertainment, sports, fashion, and culture. We build worlds around culture, sound, and sport.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DES HOUSE — Entertainment & Sports Marketing">
+  <meta property="og:description" content="We build worlds around culture, sound, and sport.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deshousemedia.com">
+  <!-- og:image: add a 1200x630 image to /assets/ and update this path -->
+  <meta property="og:image" content="./assets/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DES HOUSE — Entertainment & Sports Marketing">
+  <meta name="twitter:description" content="We build worlds around culture, sound, and sport.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+
+  <!-- Texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Cursor glow (desktop only) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" role="status" aria-label="Loading">
+    <div class="loader-text" aria-hidden="true">DES HOUSE</div>
+    <div class="loader-bar" aria-hidden="true">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="DES HOUSE — home">DES HOUSE</a>
+
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#showreel">Reel</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav
+    class="mobile-menu"
+    id="mobileMenu"
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <a href="#services">Services</a>
+    <a href="#showreel">Reel</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-fallback-bg" role="img" aria-label="Crowd at live event"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-chrome-line" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">Entertainment &amp; Sports Marketing Agency</p>
+      <h1 class="hero-title">DES HOUSE</h1>
+      <p class="hero-sub">We build worlds around culture, sound, and sport.</p>
+      <div class="hero-cta-row">
+        <a href="#work" class="btn-chrome primary">View Our Work</a>
+        <a href="#contact" class="btn-chrome secondary">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <span>ENTERTAINMENT</span><span class="dot">&#9670;</span>
+      <span>SPORTS</span><span class="dot">&#9670;</span>
+      <span>CULTURE</span><span class="dot">&#9670;</span>
+      <span>FASHION</span><span class="dot">&#9670;</span>
+      <span>MUSIC</span><span class="dot">&#9670;</span>
+      <span>BRANDING</span><span class="dot">&#9670;</span>
+      <span>CAMPAIGNS</span><span class="dot">&#9670;</span>
+      <span>CREATIVE STRATEGY</span><span class="dot">&#9670;</span>
+      <!-- Duplicate for seamless loop -->
+      <span>ENTERTAINMENT</span><span class="dot">&#9670;</span>
+      <span>SPORTS</span><span class="dot">&#9670;</span>
+      <span>CULTURE</span><span class="dot">&#9670;</span>
+      <span>FASHION</span><span class="dot">&#9670;</span>
+      <span>MUSIC</span><span class="dot">&#9670;</span>
+      <span>BRANDING</span><span class="dot">&#9670;</span>
+      <span>CAMPAIGNS</span><span class="dot">&#9670;</span>
+      <span>CREATIVE STRATEGY</span><span class="dot">&#9670;</span>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" aria-labelledby="services-heading">
+    <p class="section-label reveal">What We Do</p>
+    <h2 class="section-title reveal reveal-delay-1" id="services-heading">Services</h2>
+    <div class="section-divider reveal reveal-delay-2" aria-hidden="true"></div>
+
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">&#9889;</div>
+        <div class="service-number" aria-hidden="true">01</div>
+        <h3 class="service-title">Campaign Strategy</h3>
+        <p class="service-desc">End-to-end creative campaigns for artists, athletes, and brands. We design rollout strategies that create cultural impact and drive measurable results.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">&#9678;</div>
+        <div class="service-number" aria-hidden="true">02</div>
+        <h3 class="service-title">Brand Identity</h3>
+        <p class="service-desc">Visual identity systems, brand positioning, and creative direction. We craft brand worlds that resonate across digital and physical spaces.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">&#9650;</div>
+        <div class="service-number" aria-hidden="true">03</div>
+        <h3 class="service-title">Content Production</h3>
+        <p class="service-desc">From concept to delivery — music videos, campaign visuals, social content, and experiential design built for culture-first audiences.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-icon" aria-hidden="true">&#9671;</div>
+        <div class="service-number" aria-hidden="true">04</div>
+        <h3 class="service-title">Digital &amp; Social</h3>
+        <p class="service-desc">Social strategy, influencer partnerships, and digital activations designed to amplify reach and deepen audience connection.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-5">
+        <div class="service-icon" aria-hidden="true">&#9734;</div>
+        <div class="service-number" aria-hidden="true">05</div>
+        <h3 class="service-title">Events &amp; Experiences</h3>
+        <p class="service-desc">Immersive events, pop-ups, and cultural experiences that bring brands to life. We design moments people want to be part of.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-6">
+        <div class="service-icon" aria-hidden="true">&#11041;</div>
+        <div class="service-number" aria-hidden="true">06</div>
+        <h3 class="service-title">Talent Partnerships</h3>
+        <p class="service-desc">Strategic talent sourcing, ambassador programs, and creative collaborations connecting brands with the right cultural voices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOWREEL ============ -->
+  <section id="showreel" aria-labelledby="showreel-heading">
+    <p class="section-label reveal">See It In Action</p>
+    <h2 class="section-title reveal reveal-delay-1" id="showreel-heading">Showreel</h2>
+    <div class="section-divider reveal reveal-delay-2" style="margin-left:auto;margin-right:auto;" aria-hidden="true"></div>
+
+    <div class="reel-container reveal reveal-delay-3">
+      <div class="reel-placeholder" id="reelPlaceholder" onclick="playReel()" role="button" tabindex="0" aria-label="Play showreel video">
+        <div class="reel-play" aria-hidden="true">
+          <div class="reel-ring"></div>
+        </div>
+        <span class="reel-label">Play Showreel</span>
+      </div>
+      <div class="reel-embed" id="reelEmbed" aria-label="Showreel video">
+        <iframe id="reelIframe" src="" title="DES HOUSE Showreel" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="reel-chrome" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work" aria-labelledby="work-heading">
+    <p class="section-label reveal">Selected Projects</p>
+    <h2 class="section-title reveal reveal-delay-1" id="work-heading">The Work</h2>
+    <div class="section-divider reveal reveal-delay-2" aria-hidden="true"></div>
+
+    <!-- Populated by modal.js from projects.json -->
+    <div class="work-grid" id="workGrid" aria-label="Project case studies"></div>
+  </section>
+
+  <!-- Work Case Study Modal -->
+  <div
+    class="modal-bg"
+    id="modalBg"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="mTitle"
+    aria-hidden="true"
+  >
+    <div class="modal" id="modal">
+      <div class="modal-top" aria-hidden="true"></div>
+      <button class="modal-x" onclick="closeModal()" aria-label="Close case study">&times;</button>
+      <img class="modal-hero" id="mImg" src="" alt="">
+      <div class="modal-inner">
+        <p class="modal-cat" id="mCat"></p>
+        <h2 class="modal-t" id="mTitle"></h2>
+        <div class="modal-meta">
+          <div class="modal-meta-item">
+            <span class="modal-ml">Client</span>
+            <span class="modal-mv" id="mClient"></span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-ml">Year</span>
+            <span class="modal-mv" id="mYear"></span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-ml">Services</span>
+            <span class="modal-mv" id="mServ"></span>
+          </div>
+          <div class="modal-meta-item">
+            <span class="modal-ml">Industry</span>
+            <span class="modal-mv" id="mInd"></span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <h3>The Brief</h3>
+          <p id="mBrief"></p>
+          <h3>Our Approach</h3>
+          <p id="mApproach"></p>
+          <div class="modal-gallery" id="mGallery"></div>
+          <h3>Results</h3>
+          <div class="modal-results" id="mResults"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STATS ============ -->
+  <div class="stats-strip" aria-label="Agency stats">
+    <div class="stat reveal">
+      <div class="stat-number" data-target="50" data-suffix="+" aria-label="50+ projects delivered">0</div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat reveal reveal-delay-1">
+      <div class="stat-number" data-target="12" data-suffix="" aria-label="12 industries">0</div>
+      <div class="stat-label">Industries</div>
+    </div>
+    <div class="stat reveal reveal-delay-2">
+      <div class="stat-number" data-target="30" data-suffix="+" aria-label="30+ clients worldwide">0</div>
+      <div class="stat-label">Clients Worldwide</div>
+    </div>
+    <div class="stat reveal reveal-delay-3">
+      <div class="stat-number" data-target="100" data-suffix="%" aria-label="100% creative energy">0</div>
+      <div class="stat-label">Creative Energy</div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" aria-labelledby="about-heading">
+    <p class="section-label reveal">Who We Are</p>
+    <h2 class="section-title reveal reveal-delay-1" id="about-heading">About DES HOUSE</h2>
+    <div class="section-divider reveal reveal-delay-2" aria-hidden="true"></div>
+
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80"
+          alt="The DES HOUSE team collaborating in a creative workspace"
+          loading="lazy"
+          width="900"
+          height="600"
+        >
+        <div class="about-frame" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-text">
+        <p class="hl reveal">We don't just market culture — we're part of it.</p>
+        <p class="reveal reveal-delay-1">DES HOUSE is a creative agency at the intersection of entertainment, sports, fashion, and culture. We build campaigns that move with the pulse of what's next — connecting artists, athletes, and brands with the audiences that define them.</p>
+        <p class="reveal reveal-delay-2">Founded on the belief that the best marketing doesn't feel like marketing, we create worlds around our clients that are authentic, bold, and impossible to ignore.</p>
+        <div class="about-vals reveal reveal-delay-3">
+          <div class="about-val">
+            <h4>Culture First</h4>
+            <p>Every campaign starts with a deep understanding of the communities we serve.</p>
+          </div>
+          <div class="about-val">
+            <h4>Bold Execution</h4>
+            <p>We don't play it safe. We create work that demands attention.</p>
+          </div>
+          <div class="about-val">
+            <h4>Real Impact</h4>
+            <p>Beautiful creative that drives measurable business results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" aria-labelledby="team-heading">
+    <p class="section-label reveal">The People</p>
+    <h2 class="section-title reveal reveal-delay-1" id="team-heading">Our Team</h2>
+    <div class="section-divider reveal reveal-delay-2" aria-hidden="true"></div>
+
+    <!-- Populated by team.js from team.json -->
+    <div class="team-grid" id="teamGrid" aria-label="Team members"></div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal reveal-delay-1" id="contact-heading">Let's Work Together</h2>
+    <div class="section-divider reveal reveal-delay-2" aria-hidden="true"></div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-delay-3">
+        <h3>Ready to build something unforgettable?</h3>
+        <p>Whether you're launching a campaign, building a brand, or creating an experience — we'd love to hear from you.</p>
+        <address class="c-details">
+          <div class="c-detail">
+            <span class="c-dl">Email</span>
+            <a class="c-dv" href="mailto:hello@deshouse.com">hello@deshouse.com</a>
+          </div>
+          <div class="c-detail">
+            <span class="c-dl">Phone</span>
+            <a class="c-dv" href="tel:+10000000000">+1 (000) 000-0000</a>
+          </div>
+          <div class="c-detail">
+            <span class="c-dl">Location</span>
+            <span class="c-dv">Los Angeles, CA</span>
+          </div>
+          <div class="c-detail">
+            <span class="c-dl">Social</span>
+            <a class="c-dv" href="https://instagram.com/deshouse" target="_blank" rel="noopener noreferrer">@deshouse</a>
+          </div>
+        </address>
+      </div>
+
+      <!-- Contact Form -->
+      <form
+        class="contact-form"
+        id="contactForm"
+        novalidate
+        aria-label="Contact form"
+      >
+        <div class="form-row">
+          <div class="fg">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+              minlength="2"
+              autocomplete="name"
+            >
+          </div>
+          <div class="fg">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              autocomplete="email"
+            >
+          </div>
+        </div>
+
+        <div class="fg">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          >
+        </div>
+
+        <div class="fg">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us about your project..."
+            required
+            minlength="20"
+          ></textarea>
+        </div>
+
+        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+
+        <button type="submit" class="btn-sub">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer role="contentinfo">
+    <div class="footer-c">
+      <a href="#" class="footer-logo" aria-label="DES HOUSE — back to top">DES HOUSE</a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-soc" aria-label="Social media links">
+        <a class="footer-s" href="#" aria-label="Instagram" rel="noopener noreferrer">IG</a>
+        <a class="footer-s" href="#" aria-label="X / Twitter" rel="noopener noreferrer">X</a>
+        <a class="footer-s" href="#" aria-label="LinkedIn" rel="noopener noreferrer">IN</a>
+        <a class="footer-s" href="#" aria-label="TikTok" rel="noopener noreferrer">TK</a>
+      </div>
+    </div>
+    <div class="footer-b">
+      <p>&copy; <span id="year"></span> DES HOUSE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Auto-update copyright year -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Main JS (ES modules) -->
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
