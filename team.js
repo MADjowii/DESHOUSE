@@ -8,31 +8,31 @@ const TEAM = [
   {
     name: "Helen Charles",
     role: "Chief Executive Officer",
-    photo: "https://images.unsplash.com/photo-1548207775-a7676e36f20a?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",,
+    photo: ,
     alt: "CEO of DES HOUSE"
   },
   {
     "name": "Mohamed Abubakar",
     "role": "Chief Operating Officer",
-    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
+    "photo": ,
     "alt": "COO of DES HOUSE"
   },
   {
     "name": "Kaaya Allotey",
     "role": "Chief Strategy Officer",
-    "photo": "https://unsplash.com/illustrations/young-african-american-girl-with-afro-hairstyle-ULavxdIC8J0",
+    "photo": ,
     "alt": "Chief Strategy Officer at DES HOUSE"
   },
   {
     "name": "Joseph Madaki",
     "role": "Director of Sales & Biz Dev",
-    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80",
+    "photo": ,
     "alt": "Director of Sales at DES HOUSE"
   },
   {
     "name": "Nathália Rodrigues",
     "role": "Pre-Production & Admin",
-    "photo": "https://unsplash.com/illustrations/young-african-american-girl-with-afro-hairstyle-ULavxdIC8J0",
+    "photo": ,
     "alt": "Admin and Pre-Production at DES HOUSE"
   }
 ];
