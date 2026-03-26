@@ -6,7 +6,7 @@ let projects = [];
 let lastFocusedEl = null; // store the opener element for accessibility
 
 export async function initModal() {
-  const res = await fetch('./data/projects.json');
+  const res = await fetch('./projects.json');
   projects = await res.json();
 
   renderWorkGrid();
