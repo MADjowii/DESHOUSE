@@ -471,3 +471,29 @@
   .team-grid { grid-template-columns: 1fr; }
   .mobile-menu a { font-size: 36px; }
 }
+#work {
+  position: relative;
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+.coming-soon-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(40px, 8vw, 100px);
+  letter-spacing: 12px;
+  background: var(--ct);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
