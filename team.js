@@ -32,7 +32,7 @@ const TEAM = [
   {
     "name": "Nathália Rodrigues",
     "role": "Pre-Production & Admin",
-    "photo": "./assets/Nathália.jpeg",
+    "photo": "./assets/Nathalia.jpeg",
     "alt": "Admin and Pre-Production at DES HOUSE"
   }
 ];
