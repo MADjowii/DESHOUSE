@@ -29,4 +29,4 @@ const TEAM = [
     photo: "./assets/Nathália.jpeg",
     alt: "Nathália — Admin & Pre-Production at DES HOUSE"
   }
-];
+]
