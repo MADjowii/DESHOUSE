@@ -34,7 +34,7 @@ const TEAM = [
     "role": "Pre-Production & Admin",
     "photo": "./assets/Nathália.jpeg",
     "alt": "Admin and Pre-Production at DES HOUSE"
-  }
+  },
 ];
 
 export function initTeam() {
