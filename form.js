@@ -8,7 +8,7 @@
       e.g. "https://formspree.io/f/xpwzgkna"
    ============================================ */
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdpylwb';
 
 export function initForm() {
   const form = document.getElementById('contactForm');
